@@ -208,3 +208,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 2000);
   });
 });
+
+window.addEventListener("DOMContentLoaded", function () {
+  const wantsMusic = confirm("Mau nge-play musik gak? (plis jawab iya)");
+  if (wantsMusic) {
+    document
+      .getElementById("bgMusic")
+      .play()
+      .catch((err) => {
+        console.error("Playback failed:", err);
+      });
+  }
+});
