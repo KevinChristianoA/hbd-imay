@@ -138,36 +138,6 @@ canvas#birthday-confetti {
   margin-bottom: 10px;
 }
 
-.agenda-section {
-  background-color: #fe9cb5;
-  background-image: linear-gradient(
-      to right,
-      rgba(255, 182, 193, 0.3) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, rgba(255, 182, 193, 0.3) 1px, transparent 1px);
-  background-size: 30px 30px;
-  padding: 60px 20px;
-  text-align: center;
-  box-shadow: 0px -10px 10px rgb(0 0 0 / 12%);
-  border-top-left-radius: 60px;
-  border-top-right-radius: 60px;
-  margin-top: -20px;
-  position: relative;
-  z-index: 3;
-}
-
-.agenda-section h2 {
-  font-size: 2rem;
-  color: #b03060;
-  margin-bottom: 40px;
-}
-
-.agenda-section p {
-  color: white;
-  margin-top: -8px;
-}
-
 h2.section-title {
   background-color: #fff0f3;
   display: inline-block;
@@ -178,46 +148,6 @@ h2.section-title {
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   border: 2px solid #f8b5c5;
-}
-
-.agenda-card {
-  background-color: #fff0f3;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-  margin: 10px auto;
-  max-width: 600px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
-}
-
-.agenda-card:hover {
-  transform: scale(1.03);
-}
-
-.agenda-card img {
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  border-radius: 12px;
-  background-color: #ffe5ec;
-  border: 2px solid #f8cdd4;
-}
-
-.agenda-content h3 {
-  color: #d1495b;
-  font-size: 1.2rem;
-  margin: 0;
-  text-align: left;
-}
-
-.agenda-content p {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  color: #555;
 }
 
 .modal {

@@ -37,43 +37,6 @@ function triggerConfetti() {
   });
 }
 
-// Fungsi confetti lembut berulang di birthday section
-// function launchGentleConfetti() {
-//   confetti({
-//     particleCount: 2,
-//     spread: 70,
-//     origin: { y: 0.2 },
-//     colors: ["#ffb3c6", "#ffc6d0", "#ffd6e0"],
-//     gravity: 0.3,
-//     scalar: 0.6,
-//   });
-// }
-
-// // Jalankan confetti lembut terus-menerus
-// setInterval(launchGentleConfetti, 300);
-
-// Observer: memicu confetti saat section terlihat
-// const observedSections = document.querySelectorAll(
-//   ".scrapbook, .agenda-section, .letter-section"
-// // );
-// const confettiPlayed = new Set();
-
-// const observer = new IntersectionObserver(
-//   (entries) => {
-//     entries.forEach((entry) => {
-//       if (entry.isIntersecting && !confettiPlayed.has(entry.target)) {
-//         triggerConfetti();
-//         confettiPlayed.add(entry.target);
-//       }
-//     });
-//   },
-//   {
-//     threshold: 0.5,
-//   }
-// );
-
-// observedSections.forEach((section) => observer.observe(section));
-
 // Fungsi untuk membuka modal surat dan generate QR
 function openLetterModal() {
   document.getElementById("letterModal").style.display = "block";
@@ -106,42 +69,6 @@ window.addEventListener("load", () => {
     origin: { y: 0.6 },
   });
 });
-
-// let alreadyTriggered = false;
-
-// window.addEventListener("scroll", () => {
-//   if (!alreadyTriggered && window.scrollY > 500) {
-//     confetti({
-//       particleCount: 150,
-//       spread: 100,
-//       origin: { y: 0.6 },
-//     });
-//     alreadyTriggered = true;
-//   }
-// });
-
-// Back to top
-// BACK TO TOP
-// document.addEventListener("DOMContentLoaded", () => {
-//   const backToTopBtn = document.getElementById("backToTop");
-
-//   // Munculkan tombol saat scroll > 300px
-//   window.addEventListener("scroll", () => {
-//     if (window.scrollY > 100) {
-//       backToTopBtn.classList.add("show");
-//     } else {
-//       backToTopBtn.classList.remove("show");
-//     }
-//   });
-
-//   // Scroll ke atas saat tombol diklik
-//   backToTopBtn.addEventListener("click", () => {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: "smooth",
-//     });
-//   });
-// });
 
 window.addEventListener("load", () => {
   const bgMusic = document.getElementById("bgMusic");
@@ -191,14 +118,14 @@ document.addEventListener("DOMContentLoaded", () => {
     love.classList.add("love-particle");
 
     // Random love emoji
-    const loveEmojis = ["❤️", "💕", "💖", "💘", "💗"];
+    const loveEmojis = ["❤️"];
     love.innerText = loveEmojis[Math.floor(Math.random() * loveEmojis.length)];
 
     // Random posisi horizontal
     love.style.left = Math.random() * 100 + "vw";
 
     // Random ukuran
-    love.style.fontSize = Math.random() * 20 + 20 + "px";
+    love.style.fontSize = Math.random() * 10 + 10 + "px";
 
     document.body.appendChild(love);
 
