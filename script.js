@@ -82,15 +82,6 @@ window.addEventListener("load", () => {
 var audio = document.getElementById("bgMusic");
 audio.volume = 0.2; // Menurunkan volume ke 50%
 
-const icons = ["🎈", "💖", "⭐", "🎉", "✨"];
-
-window.addEventListener("scroll", () => {
-  if (Math.random() > 0.7) {
-    // Biar tidak terlalu sering
-    createFloatingIcon();
-  }
-});
-
 const video = document.getElementById("myVideo");
 video.volume = 0.5; // Set volume ke 50%
 
